@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dronova - Advanced Multi-Platform Autonomous Swarm Network</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <div id="background-canvas"></div>
+    <div id="drone-canvas"></div>
+    <div class="overlay"></div>
+    <header>
+        <nav>
+            <div class="logo">DRONOVA</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#tech">Tech Stack</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#team">Our Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Dronova</h1>
+            <div class="dynamic-text">
+                <span>Revolutionizing</span>
+                <span class="words">
+                    <span>Autonomous Swarms</span>
+                    <span>Aerial Intelligence</span>
+                    <span>Drone Technology</span>
+                    <span>The Future</span>
+                </span>
+            </div>
+            <a href="#" class="cta-button">Join The Revolution</a>
+        </section>
+
+        <section id="about">
+            <h2>About Dronova</h2>
+            <p>Dronova is at the forefront of autonomous swarm technology, pioneering the development of advanced Multi-Platform Autonomous Swarm Networks. Our cutting-edge system implements a swarm of intelligent drones capable of real-time fine-tuning, distributed SLAM (Simultaneous Localization and Mapping), and adaptive decision-making.</p>
+            <p>By leveraging state-of-the-art technologies and innovative algorithms, we've created a robust, adaptable, and highly efficient swarm intelligence platform that pushes the boundaries of what's possible in autonomous systems.</p>
+        </section>
+
+        <section id="features">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Real-Time Fine-Tuning</h3>
+                    <p>Our advanced machine learning algorithms allow the swarm to continuously optimize its performance in real-time, ensuring peak efficiency even in rapidly changing environments.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Distributed SLAM</h3>
+                    <p>Utilizing cutting-edge SLAM algorithms, our drones collaboratively map and navigate complex 3D environments with unprecedented precision and speed.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Mesh Network Communication</h3>
+                    <p>Our proprietary mesh network ensures robust, low-latency communication between drones, enabling seamless data exchange and coordinated decision-making.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Multi-Platform Support</h3>
+                    <p>Dronova's flexible architecture allows for deployment across various hardware platforms, from lightweight consumer drones to heavy-duty industrial UAVs.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Swarm Intelligence</h3>
+                    <p>Our advanced algorithms enable emergent collective behavior, allowing the swarm to tackle complex tasks that would be impossible for individual drones.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Adaptive Mission Planning</h3>
+                    <p>Dronova swarms can dynamically adjust their mission parameters in response to changing conditions or new objectives, ensuring optimal performance in any scenario.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech">
+            <h2>Technology Stack</h2>
+            <section id="live-demo">
+                <h2>Live Swarm Simulation</h2>
+                <div id="simulation-container"></div>
+                <div class="simulation-controls">
+                    <button id="start-simulation">Start Simulation</button>
+                    <button id="stop-simulation">Stop Simulation</button>
+                </div>
+            </section>
+            <div class="tech-stack">
+                <div class="tech-category">
+                    <h3>Core Technologies</h3>
+                    <ul>
+                        <li>Python 3.9+</li>
+                        <li>PyTorch 1.9</li>
+                        <li>CUDA 11.3</li>
+                        <li>ROS 2 Foxy</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>AI & Machine Learning</h3>
+                    <ul>
+                        <li>Transformers 4.10</li>
+                        <li>Ray 1.7 for distributed computing</li>
+                        <li>Custom SLAM implementation</li>
+                        <li>Reinforcement Learning with Stable Baselines3</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>Communication & Networking</h3>
+                    <ul>
+                        <li>ZeroMQ for inter-drone messaging</li>
+                        <li>gRPC for ground station communication</li>
+                        <li>Custom mesh network protocol</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>Simulation & Testing</h3>
+                    <ul>
+                        <li>Gazebo for physics simulation</li>
+                        <li>AirSim for realistic drone simulation</li>
+                        <li>pytest for unit and integration testing</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="applications">
+            <h2>Applications</h2>
+            <div class="application-grid">
+                <div class="application-item">
+                    <h3>Search and Rescue</h3>
+                    <p>Rapidly deploy swarms to cover large areas and locate missing persons or assess disaster zones.</p>
+                </div>
+                <div class="application-item">
+                    <h3>Environmental Monitoring</h3>
+                    <p>Track wildlife populations, monitor forest health, and detect environmental changes over time.</p>
+                </div>
+                <div class="application-item">
+                    <h3>Agricultural Automation</h3>
+                    <p>Optimize crop management through precision mapping, pest detection, and targeted interventions.</p>
+                </div>
+                <div class="application-item">
+                    <h3>Infrastructure Inspection</h3>
+                    <p>Efficiently inspect large-scale infrastructure such as bridges, power lines, and oil pipelines.</p>
+                </div>
+                <div class="application-item">
+                    <h3>Defense and Security</h3>
+                    <p>Enhance situational awareness and provide reconnaissance in complex environments.</p>
+                </div>
+                <div class="application-item">
+                    <h3>Urban Planning</h3>
+                    <p>Create detailed 3D maps of cities to aid in urban development and traffic management.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="team">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/team-member-1.jpg" alt="Bhav Jain">
+                    <h3>Bhav Jain</h3>
+                    <p>Co-Founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/team-member-2.jpg" alt="Siyuan Du">
+                    <h3>Siyuan Du</h3>
+                    <p>Co-Founder</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+        </div>
+        <p class="copyright">&copy; 2024 Dronova. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
