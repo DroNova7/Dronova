@@ -201,14 +201,30 @@ h2 {
 
 .team-member {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.team-member img {
-    width: 150px;
-    height: 150px;
+.team-image {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1rem;
+}
+
+.linkedin-link {
+    color: #0077b5;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+}
+
+.linkedin-link:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -410,44 +426,6 @@ footer {
     overflow: hidden;
 }
 
-.simulation-drone {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    transition: all 0.1s linear;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-}
-
-.simulation-controls {
-    margin-top: 1rem;
-}
-
-.simulation-controls button {
-    padding: 0.5rem 1rem;
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 0 0.5rem;
-}
-
-.simulation-controls button:hover {
-    background-color: var(--secondary-color);
-}
-
-#simulation-container {
-    width: 100%;
-    height: 400px;
-    background-color: rgba(26, 26, 26, 0.8);
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    position: relative;
-    overflow: hidden;
-}
-
 #simulation-container::after {
     content: '';
     position: absolute;
@@ -466,4 +444,29 @@ footer {
     border-radius: 50%;
     transition: all 0.1s linear;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.founder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.linkedin-link {
+    color: #0077b5;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.linkedin-link:hover {
+    text-decoration: underline;
+}
+
+.linkedin-link i {
+    font-size: 1.2rem;
 }
